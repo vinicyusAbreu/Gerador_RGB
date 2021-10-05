@@ -1,0 +1,172 @@
+:root {
+    --escuro: rgb(68, 71, 78);
+    --branco: rgb(245, 245, 245);
+    --cinza: rgb(229, 229, 229);
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(54, 57, 64);
+    font-size: 62.50%;
+}
+
+.principal {
+    background-color: rgb(54, 57, 64);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    height: 33rem;
+    width: 50rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--branco);
+}
+
+.box-data {
+    background-color: var(--escuro);
+    width: 80%;
+    font-size: 1rem;
+    padding-left: 2rem;
+    color: var(--branco);
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#data {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#hora {
+    margin-left: 1rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    background-color: blue;
+    height: 66%;
+    width: 84%;
+    margin-top: 1.5rem;
+    background-color: var(--escuro);
+    border-radius: 5px;
+}
+
+.box-rgb {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box-range1,
+.box-range2,
+.box-range3 {
+    width: 12rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+}
+
+.box-range1 {
+    background-color: rgb(255, 129, 126);
+}
+
+.box-range2 {
+    background-color: rgb(63, 183, 61);
+}
+
+.box-range3 {
+    background-color: rgb(81, 90, 171);
+}
+
+.circulo {
+    margin-top: 2rem;
+    background-color: rgb(127, 127, 127);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+#texto-rgb {
+    color: var(--branco);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+footer {
+    font-size: .8rem;
+    color: var(--branco);
+    margin-top: 1rem;
+}
+
+footer p {
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 1)
+}
+
+.coração {
+    color: red;
+}
+
+@media (max-width: 787px) {
+    .container {
+        width: 100%
+    }
+    .box-range2,
+    .box-range3 {
+        margin-left: 8px;
+    }
+    .box-rgb {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 530px) {
+     :root {
+        margin: 0;
+        padding: 0;
+    }
+    .principal {
+        width: 100vw;
+    }
+    .container {
+        width: 100%;
+        height: 48rem;
+        margin-bottom: -3rem;
+    }
+    .box {
+        width: 89%;
+    }
+    .box-rgb {
+        flex-wrap: wrap;
+    }
+    .box-range1,
+    .box-range2,
+    .box-range3 {
+        width: 14rem;
+    }
+}
