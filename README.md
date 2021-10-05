@@ -3,7 +3,7 @@
 Uma aplicação para gerar cores RGB. Desafio do DevChallenge.
 
 ## ℹ Sobre o projeto 
-Usando input range, o usuario vai poder gerar qualquer cor em RGB. Tambem vai poder ve a data e hora local e dependendo do horario a cor do site ira mudar para tema light ou tem dark. Desenvolvido com HTML, CSS e Javascript.
+Usando input range, o usuário vai poder gerar qualquer cor em RGB. Também vai poder vê a data e hora local e dependendo do horário a cor do site ira mudar para tema light ou tema dark. Desenvolvido com HTML, CSS e Javascript.
 
 ## ✨ Demonstração    
 Veja abaixo um gif do projeto.</br>
